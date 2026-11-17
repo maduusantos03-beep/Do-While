@@ -1,0 +1,12 @@
+<script>
+    let fatorial = 1;
+    let numero = parseInt(prompt("Digite um número:"));
+    let i = numero;
+
+    do {
+        fatorial = fatorial * i;
+        i--;
+    } while(i > 1);
+
+    document.write("O fatorial de " + numero + " eh: " + fatorial);
+</script>

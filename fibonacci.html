@@ -1,0 +1,17 @@
+<script>
+    let quantidade = parseInt(prompt("Digite a quantidade de termos:"));
+    let i = 1;
+    let primeiro= 1;
+    let segundo = 1;
+    let terceiro;
+
+    do {
+        document.write(primeiro + "<br>");
+
+        terceiro = primeiro + segundo;
+        primeiro = segundo;
+        segundo = terceiro;
+
+        i++;
+    } while(i <= quantidade);
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let resposta;
+
+    do {
+        let atual = parseInt(prompt("Digite o ano atual:"));
+        let datanasc = parseInt(prompt("Digite o ano de nascimento:"));
+
+        let idade = atual - datanasc;
+
+        if (idade >= 18) {
+            document.write("Idade: " + idade + " anos - Maior de idade<br>");
+        } else {
+            document.write("Idade: " + idade + " anos - Menor de idade<br>");
+        }
+
+        resposta = parseInt(prompt("Deseja continuar? (1-SIM ou 2-NÃO)"));
+
+    } while (resposta == 1);
+</script>
